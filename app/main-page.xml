@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Order Return Scanner" icon="" />
+
+    <StackLayout class="p-4">
+        <Label text="{{ message }}" class="text-lg text-center mb-4" textWrap="true" />
+        <Button text="{{ isScanning ? 'Scanning...' : 'Scan Barcode' }}" 
+                tap="{{ onScanTap }}" 
+                isEnabled="{{ !isScanning }}"
+                class="{{ isScanning ? 'bg-gray-400' : 'bg-blue-500' }} text-white p-4 rounded-lg" />
+    </StackLayout>
+</Page>
